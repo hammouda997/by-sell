@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './front-office/navbar/navbar.component';
 import { FooterComponent } from './front-office/footer/footer.component';
 import { HomeComponent } from './front-office/comp/home/home.component';
-import { ProductComponent } from './front-office/comp/product/product.component';
 import { ProductDetailComponent } from './front-office/comp/product-detail/product-detail.component';
 import { ShopComponent } from './front-office/comp/shop/shop.component';
 import { ShopDetailComponent } from './front-office/comp/shop-detail/shop-detail.component';
@@ -24,9 +23,10 @@ import { DashboardComponent } from "./back-office/comp/dashboard/dashboard.compo
 import { RouterModule, Routes } from '@angular/router';
 import { ForumComponent } from './front-office/comp/forum/forum.component';
 import { BlogComponent } from './front-office/comp/blog/blog.component';
-import { CategoryComponent } from './category/category.component';
-import { AppelComponent } from './appel/appel.component';
-import { ReclamationComponent } from './reclamation/reclamation.component';
+
+import { AppelComponent } from './front-office/comp/appel/appel.component';
+import { ReclamationComponent } from './front-office/comp/reclamation/reclamation.component';
+import { CategoryComponent } from './front-office/comp/category/category.component';
   const appRoute: Routes = [
   {path:'Shop' , component : ShopComponent},
   {path:'register' , component : RegisterComponent},
@@ -35,8 +35,7 @@ import { ReclamationComponent } from './reclamation/reclamation.component';
   {path:'checkout' , component : CheckoutComponent},
   {path:'login' , component : LoginComponent},
   {path:'ShopDetail' , component : ShopDetailComponent},
-  {path:'Product' , component : ProductComponent},
-  {path:'Product ' , component : ProductDetailComponent},
+  {path:'ProductDetails' , component : ProductDetailComponent},
   {path:'forum' , component : ForumComponent},
   {path:'blog' , component : BlogComponent},
   {path:'category' , component : CategoryComponent},
@@ -51,7 +50,6 @@ import { ReclamationComponent } from './reclamation/reclamation.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    ProductComponent,
     ProductDetailComponent,
     ShopComponent,
     ShopDetailComponent,
